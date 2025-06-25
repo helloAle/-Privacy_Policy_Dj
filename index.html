@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade e Termos de Serviço - Deeto Jr</title>
+  <title>Privacy Policy & Terms - Deeto Jr</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -27,61 +27,138 @@
       font-style: italic;
     }
     hr {
-      margin: 4rem 0;
+      margin: 3rem 0;
       border: none;
       border-top: 1px solid #ccc;
+    }
+    .lang-selector {
+      margin-bottom: 2rem;
+    }
+    .content {
+      display: none;
+    }
+    .content.active {
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <h1>Política de Privacidade e Termos de Serviço – Deeto Jr</h1>
-  <p><strong>Última atualização:</strong> 25/06/2025</p>
+  <div class="lang-selector">
+    <label for="language">Escolha o idioma / Choose language:</label>
+    <select id="language" onchange="switchLanguage()">
+      <option value="pt">Português</option>
+      <option value="en">English</option>
+    </select>
+  </div>
 
-  <h2>1. Sobre o Bot</h2>
-  <p>O <strong>Deeto Jr</strong> é um bot de música para Discord, desenvolvido por <strong>Deeto</strong>, com o objetivo exclusivo de tocar músicas em canais de voz mediante comandos fornecidos por usuários.</p>
+  <!-- Conteúdo em Português -->
+  <div id="pt" class="content active">
+    <h1>Política de Privacidade e Termos de Serviço – Deeto Jr</h1>
+    <p><strong>Última atualização:</strong> 25/06/2025</p>
 
-  <h2>2. Dados e Processamento</h2>
-  <p>O bot <strong>não coleta, armazena ou compartilha dados pessoais</strong> dos usuários. Para executar suas funções, ele processa temporariamente:</p>
-  <ul>
-    <li>Comandos enviados via chat</li>
-    <li>Informações do canal de voz</li>
-    <li>Link ou nome da música solicitada</li>
-  </ul>
-  <p>Esses dados são utilizados apenas no momento da execução e <strong>não são armazenados</strong>.</p>
+    <h2>1. Sobre o Bot</h2>
+    <p>O <strong>Deeto Jr</strong> é um bot de música para Discord, desenvolvido por <strong>Deeto</strong>, com o objetivo exclusivo de tocar músicas em canais de voz mediante comandos fornecidos por usuários.</p>
 
-  <h2>3. Serviços de Terceiros</h2>
-  <p>O bot utiliza a <strong>API do YouTube</strong> para buscar e reproduzir músicas. Ao utilizá-lo, você também está sujeito aos Termos e à Política de Privacidade do YouTube:</p>
-  <ul>
-    <li><a href="https://www.youtube.com/t/terms" target="_blank">Termos de Serviço do YouTube</a></li>
-    <li><a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a></li>
-  </ul>
+    <h2>2. Dados e Processamento</h2>
+    <p>O bot <strong>não coleta, armazena ou compartilha dados pessoais</strong>. Para funcionar, ele processa temporariamente:</p>
+    <ul>
+      <li>Comandos enviados via chat</li>
+      <li>Informações do canal de voz</li>
+      <li>Link ou nome da música solicitada</li>
+    </ul>
+    <p>Esses dados são usados somente no momento do comando e <strong>não são armazenados</strong>.</p>
 
-  <h2>4. Uso Adequado</h2>
-  <p>O uso do Deeto Jr deve seguir as diretrizes da comunidade do Discord e respeitar os direitos autorais. É proibido:</p>
-  <ul>
-    <li>Usar o bot para reproduzir conteúdo protegido sem autorização</li>
-    <li>Praticar spam, assédio, ou comportamento abusivo</li>
-  </ul>
+    <h2>3. Serviços de Terceiros</h2>
+    <p>Utilizamos a <strong>API do YouTube</strong> para buscar e reproduzir músicas. Ao usar o bot, você concorda com:</p>
+    <ul>
+      <li><a href="https://www.youtube.com/t/terms" target="_blank">Termos de Serviço do YouTube</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a></li>
+    </ul>
 
-  <h2>5. Limitação de Responsabilidade</h2>
-  <p>O desenvolvedor não se responsabiliza por:</p>
-  <ul>
-    <li>Mau uso do bot por usuários</li>
-    <li>Problemas decorrentes de mudanças nas APIs externas (como YouTube)</li>
-    <li>Consequências administrativas no Discord decorrentes do uso do bot</li>
-  </ul>
+    <h2>4. Uso Adequado</h2>
+    <p>É proibido:</p>
+    <ul>
+      <li>Usar o bot para tocar conteúdo protegido sem permissão</li>
+      <li>Praticar spam, assédio ou abuso</li>
+    </ul>
 
-  <h2>6. Modificações</h2>
-  <p>O bot e seus termos podem ser modificados ou descontinuados a qualquer momento, sem aviso prévio. O uso contínuo implica aceitação automática das mudanças.</p>
+    <h2>5. Responsabilidade</h2>
+    <p>Não nos responsabilizamos por:</p>
+    <ul>
+      <li>Mau uso do bot</li>
+      <li>Problemas causados por mudanças nas APIs</li>
+      <li>Sanções no Discord causadas pelo uso do bot</li>
+    </ul>
 
-  <h2>7. Contato</h2>
-  <p>Para dúvidas ou sugestões, entre em contato:</p>
-  <p><strong>Email:</strong> <a href="mailto:ale.oliveira.deet@gmail.com">ale.oliveira.deet@gmail.com</a></p>
+    <h2>6. Alterações</h2>
+    <p>O bot ou os termos podem mudar sem aviso. Usar o bot após mudanças significa aceitação.</p>
 
-  <footer>
-    <p>Desenvolvido por <strong>Deeto</strong> – Brasil 🇧🇷</p>
-  </footer>
+    <h2>7. Contato</h2>
+    <p>Email: <a href="mailto:ale.oliveira.deet@gmail.com">ale.oliveira.deet@gmail.com</a></p>
+
+    <footer>
+      <p>Desenvolvido por <strong>Deeto</strong> – Brasil 🇧🇷</p>
+    </footer>
+  </div>
+
+  <!-- Content in English -->
+  <div id="en" class="content">
+    <h1>Privacy Policy & Terms of Service – Deeto Jr</h1>
+    <p><strong>Last updated:</strong> 06/25/2025</p>
+
+    <h2>1. About the Bot</h2>
+    <p><strong>Deeto Jr</strong> is a Discord music bot developed by <strong>Deeto</strong>, created exclusively to play music in voice channels upon user command.</p>
+
+    <h2>2. Data and Processing</h2>
+    <p>The bot <strong>does not collect, store, or share personal data</strong>. To function, it temporarily processes:</p>
+    <ul>
+      <li>Chat commands</li>
+      <li>Voice channel info</li>
+      <li>Requested music name or link</li>
+    </ul>
+    <p>This data is used in real-time and <strong>not stored</strong>.</p>
+
+    <h2>3. Third-Party Services</h2>
+    <p>The bot uses the <strong>YouTube API</strong> to search and stream music. By using it, you agree to:</p>
+    <ul>
+      <li><a href="https://www.youtube.com/t/terms" target="_blank">YouTube Terms of Service</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+    </ul>
+
+    <h2>4. Proper Use</h2>
+    <p>You may not:</p>
+    <ul>
+      <li>Use the bot to stream copyrighted content without permission</li>
+      <li>Engage in spam, harassment, or abusive behavior</li>
+    </ul>
+
+    <h2>5. Liability</h2>
+    <p>The developer is not responsible for:</p>
+    <ul>
+      <li>Misuse of the bot</li>
+      <li>Issues caused by API changes</li>
+      <li>Discord sanctions related to the bot’s use</li>
+    </ul>
+
+    <h2>6. Changes</h2>
+    <p>The bot and these terms may change at any time without notice. Continued use implies acceptance.</p>
+
+    <h2>7. Contact</h2>
+    <p>Email: <a href="mailto:ale.oliveira.deet@gmail.com">ale.oliveira.deet@gmail.com</a></p>
+
+    <footer>
+      <p>Developed by <strong>Deeto</strong> – Brazil 🇧🇷</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage() {
+      var lang = document.getElementById("language").value;
+      document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
